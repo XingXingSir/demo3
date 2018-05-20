@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img id="1" src="../images/1.jpg" width="0px" height="0px;">
+<img id="2" src="../images/2.jpg" width="0px" height="0px">
+<img id="3" src="../images/3.jpg" width="0px" height="0px">
+<img id="4" src="../images/4.jpg" width="0px" height="0px">
+<p>画布:</p>
+<canvas id="myCanvas" width="500" height="300" style="border:1px solid #d3d3d3;">
+
+</canvas>
+<script>
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img=document.getElementById("1");
+  img.onload = function()
+  {
+    ctx.drawImage(img,10,10,100,100);
+  }
+
+
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img2=document.getElementById("2");
+  img2.onload = function()
+  {
+    ctx.drawImage(img2,120,10,100,100);
+  }
+
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img3=document.getElementById("3");
+  img3.onload = function()
+  {
+    ctx.drawImage(img3,240,10,100,100);
+  }
+
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  var img4=document.getElementById("4");
+  img4.onload = function()
+  {
+    ctx.drawImage(img4,360,10,100,100);
+  }
+</script>
+
+
+</body>
+</html>
